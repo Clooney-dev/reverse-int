@@ -3,9 +3,9 @@ module.exports = function reverse (n) {
 
     if(str[0] === '-'){
         let reverseStr = str.replace('-', '').split('').reverse().join('');
-        return reverseStr;
+        return Number(reverseStr);
     }else{
         let reverseStr = str.split('').reverse().join('');      
-        return reverseStr;  
+        return Number(reverseStr);  
     }
     }
